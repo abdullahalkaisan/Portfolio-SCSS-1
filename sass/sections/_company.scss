@@ -1,0 +1,53 @@
+
+
+.companyContainer{
+
+    width: 100%;
+
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+
+    @include flex(space-between);
+
+
+
+
+    padding: 42px 68px;
+
+
+
+
+
+    div{
+        height: 47px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .companyContainer{
+        justify-content: center;
+        // padding: 42px 68px;
+        padding: 0 20px;
+        margin-top: 40px;
+    
+        div{
+            height: 30px;
+
+
+            @include flex;
+
+
+            margin: 20px;
+        }
+    }
+}

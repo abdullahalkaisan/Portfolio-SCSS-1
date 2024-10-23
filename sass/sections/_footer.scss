@@ -1,0 +1,143 @@
+.footerContainer{
+    width: 100%;
+
+    // padding: 42px 24px 86px 24px;
+    padding: 42px 68px 86px 68px;
+    @include flex(space-between);
+
+    .footerWrapper{
+    @include flex(space-between, flex-start);
+
+    .textBox{
+        width: 50%;
+        h1{
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 42px;
+            // margin-bottom: 24px;
+
+        }
+        p{
+            margin-top: 24px;
+            margin-bottom: 42px;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 27px;
+            width: 70%;
+        }
+
+        .socialWrapper{
+            @include flex(flex-start);
+            img{
+                margin-right: 24px;
+            }
+        }
+
+    }
+
+    .inputBox{
+        width: 50%;
+
+        form{
+            
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+            button{
+                cursor: pointer;
+                outline: none;
+                border: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 24px 64px;
+                gap: 10px;
+                width: 199px;
+                height: 78px;
+                background: $black;
+                color:$white;
+                font-size: 20px;
+                flex: none;
+                order: 1;
+                flex-grow: 0;
+                transition: ease .3s;
+                &:hover{
+                    transition: ease .3s;
+                    background: darken($black, 10%) ;
+                }
+            }
+
+            input{
+                outline: none;
+                border: none;
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 16px 24px;
+                gap: 10px;
+                width: 100%;
+                // width: 520px;
+                // min-width: 320px;
+                // max-width: 520px;
+                font-size: 17px;
+                height: 59px;
+                background: $gray;
+                margin-bottom: 24px;
+
+            }
+        }
+    }
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .footerContainer{
+        padding: 40px 40px 86px 40px;
+        .footerWrapper{
+            flex-direction: column;
+            .textBox{
+                width: 100%;
+                p{
+                    width: 100%;
+                }
+                .socialWrapper{
+                    justify-content: center;
+                }
+            }
+
+
+            .inputBox{
+                width: 100%;
+                margin-top: 68px;
+
+                button{
+                    width: 100% !important;
+                    border-radius: 999px;
+                    margin: auto;
+                    
+                }
+            }
+
+
+
+        }
+    } 
+
+}

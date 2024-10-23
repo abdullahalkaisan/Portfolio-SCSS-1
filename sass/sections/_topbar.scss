@@ -1,0 +1,35 @@
+
+
+.topBar{
+    height: 78px;
+    // background-color: $red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $white;
+
+
+    h4{
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    ul{
+        display: flex;
+
+        li{
+            list-style-type: none;
+            margin-right: 30px;
+            cursor: pointer;
+            font-size: 17px;
+        }
+    }
+
+}
+
+

@@ -1,0 +1,10 @@
+# Ignore all image files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+
+# Ignore node_modules folder
+node_modules/
